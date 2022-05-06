@@ -1,0 +1,29 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transform: scale(5);
+    background-color: rgb(12, 12, 12);
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+
+.c-loader{
+    height: 50px;
+    width: 50px;
+    border: 6px solid dodgerblue;
+    border-top-color: darkorchid;
+    animation: loading 2s infinite;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
